@@ -6,7 +6,7 @@
 	worn_icon = 'icons/mob/clothing/modsuit/mod_clothing.dmi'
 
 /obj/item/mod/control
-	name = "control unit"
+	name = "управляющий модуль"
 	desc = "Блок управления Модульного Устройства Внешней защиты, скафандр с питанием способный защитить от разных сред."
 	icon_state = "control"
 	inhand_icon_state = "mod_control"
@@ -31,7 +31,7 @@
 	alternate_worn_layer = HANDS_LAYER+0.1 //we want it to go above generally everything, but not hands
 	/// The MOD's theme, decides on some stuff like armor and statistics.
 	var/datum/mod_theme/theme = /datum/mod_theme
-	var/ru_name = "блок управления MOD-Скафа"
+	var/ru_name = "блок управления МОД-Скафа"
 	/// Looks of the MOD.
 	var/skin = "standard"
 	/// Theme of the MOD TGUI
