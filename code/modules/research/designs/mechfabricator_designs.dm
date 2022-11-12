@@ -1073,7 +1073,7 @@
 	materials = list(/datum/material/iron = 6000, /datum/material/glass = 3000, /datum/material/plasma = 1000)
 	construction_time = 15 SECONDS
 	build_path = /obj/item/mod/construction/plating
-	category = list("Создание МОД-Скафандров")
+	category = list("Создание МОД")
 	research_icon = 'icons/obj/clothing/modsuit/mod_construction.dmi'
 	research_icon_state = "standard-plating"
 
@@ -1138,7 +1138,7 @@
 	construction_time = 1 SECONDS
 	materials = list(/datum/material/iron = 1000, /datum/material/glass = 1000)
 	build_path = /obj/item/mod/module
-	category = list("Модули МОД-Скафандров")
+	category = list("Модули МОД")
 	var/department_type = MODULE_GENERAL
 
 /datum/design/module/New()
