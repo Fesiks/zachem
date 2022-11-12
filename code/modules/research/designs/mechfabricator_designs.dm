@@ -1017,13 +1017,13 @@
 
 /datum/design/mod_shell
 	name = "Каркас МОД-Скафандра"
-	desc = "A 'Nakamura Engineering' designed shell for a Modular Suit."
+	desc = "Чертеж каркаса МОД-Скафнадра от 'Накамура инжиниринг'"
 	id = "mod_shell"
 	build_type = MECHFAB
 	materials = list(/datum/material/iron = 10000, /datum/material/plasma = 5000)
 	construction_time = 25 SECONDS
 	build_path = /obj/item/mod/construction/shell
-	category = list("Создание MOD")
+	category = list("Создание МОД")
 
 /datum/design/mod_helmet
 	name = "Шлем МОД-Скафандра"
@@ -1033,7 +1033,7 @@
 	materials = list(/datum/material/iron = 5000)
 	construction_time = 10 SECONDS
 	build_path = /obj/item/mod/construction/helmet
-	category = list("Создание MOD")
+	category = list("Создание МОД")
 
 /datum/design/mod_chestplate
 	name = "Нагрудник МОД-Скафандра"
@@ -1043,7 +1043,7 @@
 	materials = list(/datum/material/iron = 5000)
 	construction_time = 10 SECONDS
 	build_path = /obj/item/mod/construction/chestplate
-	category = list("Создание MOD")
+	category = list("Создание МОД")
 
 /datum/design/mod_gauntlets
 	name = "Перчатки МОД-Скафандра"
@@ -1053,7 +1053,7 @@
 	materials = list(/datum/material/iron = 5000)
 	construction_time = 10 SECONDS
 	build_path = /obj/item/mod/construction/gauntlets
-	category = list("Создание MOD")
+	category = list("Создание МОД")
 
 /datum/design/mod_boots
 	name = "Ботинки МОД-Скафандра"
@@ -1063,7 +1063,7 @@
 	materials = list(/datum/material/iron = 5000)
 	construction_time = 10 SECONDS
 	build_path = /obj/item/mod/construction/boots
-	category = list("Создание MOD")
+	category = list("Создание МОД")
 
 /datum/design/mod_plating
 	name = "МОД Внешняя обшивка"
@@ -1081,8 +1081,8 @@
 	. = ..()
 	var/obj/item/mod/construction/plating/armor_type = build_path
 	var/datum/mod_theme/theme = GLOB.mod_themes[initial(armor_type.theme)]
-	name = "МОД [theme.name] обшивка"
-	desc = "External plating for a MODsuit. [theme.desc]"
+	name = "МОД [theme.ru_name] обшивка"
+	desc = "Внешняя обшивка для МОД-Скафандра. [theme.desc]"
 
 /datum/design/mod_plating/engineering
 	id = "mod_plating_engineering"

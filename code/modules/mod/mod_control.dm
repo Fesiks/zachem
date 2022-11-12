@@ -121,7 +121,7 @@
 	mod_parts += boots
 	var/list/all_parts = mod_parts + src
 	for(var/obj/item/part as anything in all_parts)
-		part.name = "[theme.name] [part.name]"
+		part.name = "[theme.ru_name] [part.name]"
 		part.desc = "[part.desc] [theme.desc]"
 		part.armor = getArmor(arglist(theme.armor))
 		part.resistance_flags = theme.resistance_flags
