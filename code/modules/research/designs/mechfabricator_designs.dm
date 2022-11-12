@@ -1017,7 +1017,7 @@
 
 /datum/design/mod_shell
 	name = "Каркас МОД-Скафандра"
-	desc = "Чертеж каркаса МОД-Скафнадра от 'Накамура инжиниринг'"
+	desc = "Чертеж каркаса МОД-Скафандра от 'Накамура инжиниринг'"
 	id = "mod_shell"
 	build_type = MECHFAB
 	materials = list(/datum/material/iron = 10000, /datum/material/plasma = 5000)
@@ -1027,7 +1027,7 @@
 
 /datum/design/mod_helmet
 	name = "Шлем МОД-Скафандра"
-	desc = "Чертеж шлема МОД-Скафнадра от 'Накамура инжиниринг'."
+	desc = "Чертеж шлема МОД-Скафандра от 'Накамура инжиниринг'."
 	id = "mod_helmet"
 	build_type = MECHFAB
 	materials = list(/datum/material/iron = 5000)
@@ -1037,7 +1037,7 @@
 
 /datum/design/mod_chestplate
 	name = "Нагрудник МОД-Скафандра"
-	desc = "Чертеж нагрудника МОД-Скафнадра от 'Накамура инжиниринг'."
+	desc = "Чертеж нагрудника МОД-Скафандра от 'Накамура инжиниринг'."
 	id = "mod_chestplate"
 	build_type = MECHFAB
 	materials = list(/datum/material/iron = 5000)
@@ -1047,7 +1047,7 @@
 
 /datum/design/mod_gauntlets
 	name = "Перчатки МОД-Скафандра"
-	desc = "Чертеж перчаток МОД-Скафнадра от 'Накамура инжиниринг'."
+	desc = "Чертеж перчаток МОД-Скафандра от 'Накамура инжиниринг'."
 	id = "mod_gauntlets"
 	build_type = MECHFAB
 	materials = list(/datum/material/iron = 5000)
@@ -1057,7 +1057,7 @@
 
 /datum/design/mod_boots
 	name = "Ботинки МОД-Скафандра"
-	desc = "Чертеж ботинок МОД-Скафнадра от 'Накамура инжиниринг'."
+	desc = "Чертеж ботинок МОД-Скафандра от 'Накамура инжиниринг'."
 	id = "mod_boots"
 	build_type = MECHFAB
 	materials = list(/datum/material/iron = 5000)

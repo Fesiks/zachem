@@ -2003,7 +2003,7 @@
 /datum/techweb_node/mod_medical
 	id = "mod_medical"
 	display_name = "Медицинские модульные скафандры"
-	description = "Медицинские модульные скафандры для проведения спасательных операциях во враждебное среде."
+	description = "Медицинские модульные скафандры для проведения спасательных операциях во враждебной среде."
 	prereq_ids = list("mod_advanced", "biotech")
 	design_ids = list(
 		"mod_plating_medical",
