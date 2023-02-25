@@ -40283,7 +40283,7 @@
 /obj/item/wrench,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/stock_parts/cell/emproof{
+/obj/item/stock_parts/cell/emproof/empty{
 	pixel_x = 4;
 	pixel_y = 2
 	},
@@ -77998,7 +77998,7 @@
 	pixel_x = 2;
 	pixel_y = -2
 	},
-/obj/item/stock_parts/cell/emproof{
+/obj/item/stock_parts/cell/emproof/empty{
 	pixel_x = 1;
 	pixel_y = 3
 	},
@@ -109563,7 +109563,7 @@
 /obj/item/electronics/airlock,
 /obj/item/electronics/airlock,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stock_parts/cell/emproof{
+/obj/item/stock_parts/cell/emproof/empty{
 	pixel_x = -3;
 	pixel_y = 5
 	},

@@ -6481,7 +6481,7 @@
 	},
 /obj/item/stack/sheet/plasteel/fifty,
 /obj/item/stack/sheet/plasteel/fifty,
-/obj/item/stock_parts/cell/emproof{
+/obj/item/stock_parts/cell/emproof/empty{
 	pixel_x = 1;
 	pixel_y = 3
 	},

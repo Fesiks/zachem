@@ -14,7 +14,7 @@
 	max_equip_by_category = list(
 		MECHA_UTILITY = 1,
 		MECHA_POWER = 1,
-		MECHA_ARMOR = 2,
+		MECHA_ARMOR = 1,
 	)
 	step_energy_drain = 3
 

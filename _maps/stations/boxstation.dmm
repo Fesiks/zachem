@@ -25875,7 +25875,7 @@
 /obj/item/storage/box/lights/mixed,
 /obj/item/stack/cable_coil,
 /obj/item/stack/cable_coil,
-/obj/item/stock_parts/cell/emproof,
+/obj/item/stock_parts/cell/emproof/empty,
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/engineering/engine_smes)
@@ -48856,7 +48856,7 @@
 /obj/structure/table,
 /obj/item/stack/sheet/iron/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stock_parts/cell/emproof{
+/obj/item/stock_parts/cell/emproof/empty{
 	pixel_x = 6;
 	pixel_y = -2
 	},
@@ -65495,7 +65495,7 @@
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/clothing/gloves/color/yellow,
-/obj/item/stock_parts/cell/emproof{
+/obj/item/stock_parts/cell/emproof/empty/empty{
 	pixel_x = -4;
 	pixel_y = -1
 	},

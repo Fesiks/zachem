@@ -42688,6 +42688,7 @@
 	name = "atmospherics camera";
 	network = list("ss13","engine")
 	},
+/obj/machinery/atmospherics/miner/nitrogen,
 /turf/open/floor/engine/n2,
 /area/engineering/atmos)
 "joj" = (
@@ -45307,6 +45308,7 @@
 	name = "atmospherics camera";
 	network = list("ss13","engine")
 	},
+/obj/machinery/atmospherics/miner/oxygen,
 /turf/open/floor/engine/o2,
 /area/engineering/atmos)
 "kot" = (
@@ -63297,10 +63299,6 @@
 /obj/item/grenade/chem_grenade/smart_metal_foam{
 	pixel_x = -2
 	},
-/obj/item/stock_parts/cell/emproof{
-	pixel_x = 6;
-	pixel_y = -6
-	},
 /turf/open/floor/plasteel/dark,
 /area/engineering/main)
 "reJ" = (
@@ -64370,6 +64368,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/research)
+"rwk" = (
+/obj/machinery/atmospherics/miner/n2o,
+/turf/open/floor/engine/n2o,
+/area/engineering/atmos)
 "rwo" = (
 /obj/machinery/atmospherics/pipe/smart/simple/dark/visible{
 	dir = 4
@@ -69563,6 +69565,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/cargo/miningoffice)
+"tyQ" = (
+/obj/machinery/atmospherics/miner/toxins,
+/turf/open/floor/engine/plasma,
+/area/engineering/atmos)
 "tzf" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/caution/stand_clear,
@@ -70403,6 +70409,10 @@
 /obj/machinery/modular_computer/console/preset/cargochat/engineering,
 /turf/open/floor/plasteel/dark,
 /area/engineering/main)
+"tOS" = (
+/obj/machinery/atmospherics/miner/carbon_dioxide,
+/turf/open/floor/engine/co2,
+/area/engineering/atmos)
 "tPt" = (
 /obj/structure/bookcase/random/fiction,
 /turf/open/floor/wood,
@@ -76048,11 +76058,11 @@
 	network = list("ss13","engine")
 	},
 /obj/machinery/light_switch/directional/east,
-/obj/item/stock_parts/cell/emproof{
+/obj/item/stock_parts/cell/emproof/empty{
 	pixel_x = 3;
 	pixel_y = 7
 	},
-/obj/item/stock_parts/cell/emproof{
+/obj/item/stock_parts/cell/emproof/empty{
 	pixel_x = -6;
 	pixel_y = 5
 	},
@@ -110274,7 +110284,7 @@ okk
 lRG
 kWQ
 gQs
-nGB
+tOS
 idD
 aaa
 aaa
@@ -111302,7 +111312,7 @@ gkx
 lRG
 oOf
 osy
-oOf
+tyQ
 idD
 acm
 aaa
@@ -112330,7 +112340,7 @@ gkx
 lRG
 qbM
 jQf
-oNT
+rwk
 idD
 acm
 aaa
