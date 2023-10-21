@@ -688,6 +688,10 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define DO_NOT_SPLASH "do_not_splash"
 /// Marks an atom when the cleaning of it is first started, so that the cleaning overlay doesn't get removed prematurely
 #define CURRENTLY_CLEANING "currently_cleaning"
+/// Objects with this trait are deleted if they fall into chasms, rather than entering abstract storage
+#define TRAIT_CHASM_DESTROYED "chasm_destroyed"
+/// Trait from being under the floor in some manner
+#define TRAIT_UNDERFLOOR "underfloor"
 
 // unique trait sources, still defines
 #define CLONING_POD_TRAIT "cloning-pod"
@@ -852,3 +856,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 //Traits applied to the mind
 /// This mob is considered dead for the sake of objectives
 #define MIND_TRAIT_OBJECTIVE_DEAD "mind_trait_objective_dead"
+
+/// If the movable shouldn't be reflected by mirrors.
+#define TRAIT_NO_MIRROR_REFLECTION "no_mirror_reflection"

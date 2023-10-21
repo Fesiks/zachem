@@ -139,6 +139,8 @@
 	var/always_area_sensitive = FALSE
 	/// For storing and overriding ui id
 	var/tgui_id // ID of TGUI interface
+	///Is this machine currently in the atmos machinery queue?
+	var/atmos_processing = FALSE
 	/// What was our power state the last time we updated its appearance?
 	/// TRUE for on, FALSE for off, -1 for never checked
 	var/appearance_power_state = -1
@@ -190,7 +192,7 @@
 /obj/machinery/proc/setup_area_power_relationship()
 	var/area/our_area = get_area(src)
 	if(our_area)
-		RegisterSignal(our_area, COMSIG_AREA_POWER_CHANGE, PROC_REF(power_change))
+		RegisterSignal(our_area, COMSIG_AREA_POWER_CHANGE, PROC_REF(power_change), override = TRUE)
 
 	if(HAS_TRAIT_FROM(src, TRAIT_AREA_SENSITIVE, INNATE_TRAIT)) // If we for some reason have not lost our area sensitivity, there's no reason to set it back up
 		return FALSE
@@ -225,7 +227,7 @@
 		return
 	update_current_power_usage()
 	power_change()
-	RegisterSignal(area_to_register, COMSIG_AREA_POWER_CHANGE, PROC_REF(power_change))
+	RegisterSignal(area_to_register, COMSIG_AREA_POWER_CHANGE, PROC_REF(power_change), override = TRUE)
 
 /obj/machinery/proc/on_exit_area(datum/source, area/area_to_unregister)
 	SIGNAL_HANDLER
@@ -988,4 +990,3 @@
 	var/alertstr = span_userdanger("Network Alert: Hacking attempt detected[get_area(src)?" in [get_area_name(src, TRUE)]":". Unable to pinpoint location"].")
 	for(var/mob/living/silicon/ai/AI in GLOB.player_list)
 		to_chat(AI, alertstr)
-

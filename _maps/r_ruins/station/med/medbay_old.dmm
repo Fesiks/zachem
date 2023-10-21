@@ -1881,6 +1881,7 @@
 /obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
+/obj/item/storage/ashtray/glass,
 /obj/item/reagent_containers/spray/cleaner,
 /turf/open/floor/carpet/purple,
 /area/medical/break_room)
@@ -2388,7 +2389,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/obj/machinery/atmospherics/components/unary/tank/air{
+/obj/machinery/atmospherics/components/tank/air{
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -3332,7 +3333,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
 	dir = 8
 	},
-/obj/machinery/portable_atmospherics/canister/tier_2,
+/obj/machinery/portable_atmospherics/canister,
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "FC" = (

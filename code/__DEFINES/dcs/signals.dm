@@ -609,6 +609,9 @@
 /// from /obj/machinery/atmospherics/components/binary/valve/toggle(): (on)
 #define COMSIG_VALVE_SET_OPEN "valve_toggled"
 
+/// from /obj/machinery/atmospherics/set_on(active): (on)
+#define COMSIG_ATMOS_MACHINE_SET_ON "atmos_machine_set_on"
+
 // /obj access signals
 
 #define COMSIG_OBJ_ALLOWED "door_try_to_activate"
@@ -1292,6 +1295,14 @@
 /// Called on the merger after finishing a refresh: (list/leaving_members, list/joining_members)
 #define COMSIG_MERGER_REFRESH_COMPLETE "comsig_merger_refresh_complete"
 
+// Gas mixture signals
+/// From /datum/gas_mixture/proc/merge: ()
+#define COMSIG_GASMIX_MERGED "comsig_gasmix_merged"
+/// From /datum/gas_mixture/proc/remove: ()
+#define COMSIG_GASMIX_REMOVED "comsig_gasmix_removed"
+/// From /datum/gas_mixture/proc/react: ()
+#define COMSIG_GASMIX_REACTED "comsig_gasmix_reacted"
+
 // Alarm listener datum signals
 ///Sent when an alarm is fired (alarm, area/source_area)
 #define COMSIG_ALARM_TRIGGERED "comsig_alarm_triggered"
@@ -1300,6 +1311,8 @@
 // Area fire signals
 /// Sent when an area's fire var changes: (fire_value)
 #define COMSIG_AREA_FIRE_CHANGED "area_fire_set"
+/// Called when the air alarm mode is updated
+#define COMSIG_AIRALARM_UPDATE_MODE "airalarm_update_mode"
 // Vacuum signals
 /// Called on a bag being attached to a vacuum parent
 #define COMSIG_VACUUM_BAG_ATTACH "comsig_vacuum_bag_attach"
@@ -1425,8 +1438,9 @@
 ///from base of datum/component/fixeye/disable_fixeye(): (mob/living/source, silent, forced)
 #define COMSIG_LIVING_FIXEYE_DISABLED "fixeye_disabled"
 
-///from base of atom/setDir(): (old_dir, new_dir). Called before the direction changes.
-#define COMPONENT_NO_DIR_CHANGE 1
+///from base of atom/setDir(): (old_dir, new_dir). Called before the direction and COMSIG_ATOM_DIR_CHANGE is sent.
+#define COMSIG_ATOM_PRE_DIR_CHANGE "atom_pre_dir_change"
+	#define COMPONENT_NO_DIR_CHANGE 1
 
 ///from base of /item/proc/set_painting_tool_color(): (chosen_color)
 #define COMSIG_PAINTING_TOOL_SET_COLOR "painting_tool_set_color"
